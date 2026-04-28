@@ -7,7 +7,14 @@ const year = new Date().getFullYear();
 <footer class="border-t border-civic-ink/10 bg-civic-ink text-white">
   <div class="container-page grid gap-10 py-12 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
     <div>
-      <p class="text-xl font-bold">Howard County Muslim Council</p>
+      <div class="inline-flex rounded bg-white p-2">
+        <img
+          src={withBase('/images/hcmc-logo.jpg')}
+          alt="Howard County Muslim Council"
+          class="h-16 w-auto max-w-[260px] object-contain"
+          loading="lazy"
+        />
+      </div>
       <p class="mt-4 max-w-xl text-white/75">
         A civic-minded nonprofit presence supporting service, education, partnership, and belonging across Howard County.
       </p>

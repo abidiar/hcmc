@@ -20,14 +20,15 @@ const currentPath = Astro.url.pathname.startsWith(basePath)
 
 <header class="sticky top-0 z-50 border-b border-civic-ink/10 bg-civic-paper/95 backdrop-blur">
   <nav class="container-page flex min-h-20 items-center justify-between gap-6" aria-label="Primary navigation">
-    <a href={withBase('/')} class="flex items-center gap-3 text-civic-ink" aria-label="Howard County Muslim Council home">
-      <span class="grid h-11 w-11 place-items-center rounded bg-civic-pine text-lg font-bold text-white">H</span>
-      <span class="leading-tight">
-        <span class="block text-base font-bold sm:text-lg">Howard County</span>
-        <span class="block text-sm text-civic-ink/70">Muslim Council</span>
-      </span>
+    <a href={withBase('/')} class="flex min-w-0 items-center text-civic-ink" aria-label="Howard County Muslim Council home">
+      <img
+        src={withBase('/images/hcmc-logo.jpg')}
+        alt="Howard County Muslim Council"
+        class="h-14 w-auto max-w-[210px] object-contain sm:h-16 sm:max-w-[260px] xl:max-w-[300px]"
+        loading="eager"
+      />
     </a>
-    <div class="hidden items-center gap-1 lg:flex">
+    <div class="hidden items-center gap-1 xl:flex">
       {
         navItems.map((item) => {
           const isActive = item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href);
@@ -53,7 +54,7 @@ const currentPath = Astro.url.pathname.startsWith(basePath)
       Support the Work
     </a>
   </nav>
-  <div class="container-page flex gap-2 overflow-x-auto border-t border-civic-ink/10 py-3 lg:hidden">
+  <div class="container-page flex gap-2 overflow-x-auto border-t border-civic-ink/10 py-3 xl:hidden">
     {
       navItems.map((item) => (
         <a
