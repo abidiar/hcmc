@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder community gathering image</title>
+  <desc id="desc">Abstract civic gathering scene with people, tables, and a county landscape.</desc>
+  <rect width="1200" height="800" fill="#E8F1F6"/>
+  <rect y="520" width="1200" height="280" fill="#EEF5F2"/>
+  <path d="M0 460c150-70 290-70 420 0s260 76 420 0 270-70 360-24v128H0Z" fill="#CFE3DE"/>
+  <rect x="140" y="260" width="920" height="300" rx="18" fill="#FBFCFA"/>
+  <rect x="188" y="318" width="240" height="28" rx="14" fill="#0F4F47"/>
+  <rect x="188" y="374" width="430" height="16" rx="8" fill="#8DB8B2"/>
+  <rect x="188" y="414" width="360" height="16" rx="8" fill="#C4943C"/>
+  <circle cx="760" cy="386" r="48" fill="#287D7B"/>
+  <circle cx="870" cy="386" r="48" fill="#C4943C"/>
+  <circle cx="815" cy="300" r="46" fill="#17313A"/>
+  <rect x="714" y="458" width="212" height="24" rx="12" fill="#17313A"/>
+</svg>

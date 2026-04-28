@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-civic-paper text-civic-ink antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-civic-gold;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold uppercase tracking-[0.16em] text-civic-teal;
+  }
+
+  .prose-page {
+    @apply prose prose-lg max-w-none prose-headings:text-civic-ink prose-a:font-semibold prose-a:text-civic-pine prose-strong:text-civic-ink;
+  }
+
+  .prose-page h2 {
+    @apply mt-12 text-3xl;
+  }
+
+  .prose-page h3 {
+    @apply mt-8 text-2xl;
+  }
+
+  .prose-page ul {
+    @apply marker:text-civic-gold;
+  }
+}

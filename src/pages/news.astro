@@ -1,0 +1,16 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import PageShell from '@/components/PageShell.astro';
+
+const page = await getEntry('pages', 'news');
+const posts = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const cards = posts.map((post) => ({
+  title: post.data.title,
+  text: post.data.summary,
+  meta: post.data.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
+  image: post.data.image,
+  imageAlt: post.data.imageAlt
+}));
+---
+
+<PageShell page={page} cards={cards} cardsEyebrow="Updates" cardsTitle="Latest news and notices" />

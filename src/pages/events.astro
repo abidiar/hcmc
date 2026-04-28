@@ -1,0 +1,16 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import PageShell from '@/components/PageShell.astro';
+
+const page = await getEntry('pages', 'events');
+const events = (await getCollection('events')).sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
+const cards = events.map((event) => ({
+  title: event.data.title,
+  text: event.data.summary,
+  meta: `${event.data.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · ${event.data.time} · ${event.data.location}`,
+  image: event.data.image,
+  imageAlt: event.data.imageAlt
+}));
+---
+
+<PageShell page={page} cards={cards} cardsEyebrow="Calendar" cardsTitle="Upcoming public events" />

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder dialogue image</title>
+  <desc id="desc">Abstract image representing civic dialogue and partnership.</desc>
+  <rect width="900" height="600" fill="#E8F1F6"/>
+  <rect x="110" y="130" width="300" height="220" rx="18" fill="#FBFCFA"/>
+  <rect x="490" y="190" width="300" height="220" rx="18" fill="#FBFCFA"/>
+  <path d="M220 350l-48 70 104-70Z" fill="#FBFCFA"/>
+  <path d="M680 410l50 70-108-70Z" fill="#FBFCFA"/>
+  <rect x="160" y="185" width="180" height="20" rx="10" fill="#0F4F47"/>
+  <rect x="160" y="238" width="200" height="16" rx="8" fill="#C4943C"/>
+  <rect x="540" y="245" width="180" height="20" rx="10" fill="#17313A"/>
+  <rect x="540" y="298" width="200" height="16" rx="8" fill="#287D7B"/>
+</svg>

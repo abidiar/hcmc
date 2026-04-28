@@ -1,0 +1,68 @@
+---
+import { withBase } from '@/lib/paths';
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Programs', href: '/programs/' },
+  { label: 'Events', href: '/events/' },
+  { label: 'Get Involved', href: '/get-involved/' },
+  { label: 'Support', href: '/support/' },
+  { label: 'News', href: '/news/' },
+  { label: 'Contact', href: '/contact/' }
+];
+
+const basePath = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname.startsWith(basePath)
+  ? `/${Astro.url.pathname.slice(basePath.length)}`
+  : Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 border-b border-civic-ink/10 bg-civic-paper/95 backdrop-blur">
+  <nav class="container-page flex min-h-20 items-center justify-between gap-6" aria-label="Primary navigation">
+    <a href={withBase('/')} class="flex items-center gap-3 text-civic-ink" aria-label="Howard County Muslim Council home">
+      <span class="grid h-11 w-11 place-items-center rounded bg-civic-pine text-lg font-bold text-white">H</span>
+      <span class="leading-tight">
+        <span class="block text-base font-bold sm:text-lg">Howard County</span>
+        <span class="block text-sm text-civic-ink/70">Muslim Council</span>
+      </span>
+    </a>
+    <div class="hidden items-center gap-1 lg:flex">
+      {
+        navItems.map((item) => {
+          const isActive = item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href);
+          return (
+            <a
+              href={withBase(item.href)}
+              class:list={[
+                'rounded px-3 py-2 text-sm font-semibold',
+                isActive ? 'bg-civic-mist text-civic-pine' : 'text-civic-ink/75 hover:bg-civic-mist hover:text-civic-pine'
+              ]}
+              aria-current={isActive ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          );
+        })
+      }
+    </div>
+    <a
+      href={withBase('/support/')}
+      class="hidden rounded bg-civic-gold px-4 py-2.5 text-sm font-bold text-civic-ink shadow-sm hover:bg-[#B4812B] md:inline-flex"
+    >
+      Support the Work
+    </a>
+  </nav>
+  <div class="container-page flex gap-2 overflow-x-auto border-t border-civic-ink/10 py-3 lg:hidden">
+    {
+      navItems.map((item) => (
+        <a
+          href={withBase(item.href)}
+          class="shrink-0 rounded bg-white px-3 py-2 text-sm font-semibold text-civic-ink/75 shadow-sm hover:text-civic-pine"
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </div>
+</header>

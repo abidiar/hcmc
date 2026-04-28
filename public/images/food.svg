@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder food assistance image</title>
+  <desc id="desc">Abstract image representing food assistance and care.</desc>
+  <rect width="900" height="600" fill="#EEF5F2"/>
+  <rect x="170" y="160" width="560" height="300" rx="18" fill="#FBFCFA"/>
+  <circle cx="450" cy="300" r="110" fill="#E8F1F6"/>
+  <path d="M352 300c42-52 154-52 196 0-42 52-154 52-196 0Z" fill="#C4943C"/>
+  <circle cx="450" cy="300" r="34" fill="#0F4F47"/>
+  <path d="M280 470h340" stroke="#287D7B" stroke-width="18" stroke-linecap="round"/>
+</svg>

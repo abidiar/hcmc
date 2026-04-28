@@ -1,0 +1,17 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import PageShell from '@/components/PageShell.astro';
+
+const page = await getEntry('pages', 'home');
+const programs = await getCollection('programs');
+const cards = programs.slice(0, 3).map((program) => ({
+  title: program.data.title,
+  text: program.data.summary,
+  meta: program.data.audience,
+  image: program.data.image,
+  imageAlt: program.data.imageAlt,
+  href: '/programs/'
+}));
+---
+
+<PageShell page={page} cards={cards} cardsEyebrow="Featured Programs" cardsTitle="Community-centered work" />

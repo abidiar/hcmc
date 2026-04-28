@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder news image</title>
+  <desc id="desc">Abstract image representing public updates and announcements.</desc>
+  <rect width="900" height="600" fill="#E8F1F6"/>
+  <rect x="140" y="110" width="620" height="380" rx="18" fill="#FBFCFA"/>
+  <rect x="200" y="180" width="250" height="28" rx="14" fill="#17313A"/>
+  <rect x="200" y="250" width="440" height="18" rx="9" fill="#8DB8B2"/>
+  <rect x="200" y="304" width="380" height="18" rx="9" fill="#C4943C"/>
+  <rect x="200" y="358" width="460" height="18" rx="9" fill="#287D7B"/>
+</svg>

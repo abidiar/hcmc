@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder service day image</title>
+  <desc id="desc">Abstract image representing volunteers serving the community.</desc>
+  <rect width="900" height="600" fill="#EEF5F2"/>
+  <circle cx="210" cy="210" r="82" fill="#287D7B"/>
+  <circle cx="450" cy="180" r="82" fill="#C4943C"/>
+  <circle cx="690" cy="220" r="82" fill="#17313A"/>
+  <rect x="130" y="330" width="640" height="74" rx="8" fill="#FBFCFA"/>
+  <rect x="170" y="356" width="180" height="22" rx="11" fill="#0F4F47"/>
+  <rect x="390" y="356" width="340" height="22" rx="11" fill="#8DB8B2"/>
+  <path d="M100 500h700" stroke="#C4943C" stroke-width="18" stroke-linecap="round"/>
+</svg>

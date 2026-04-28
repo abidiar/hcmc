@@ -1,0 +1,16 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import PageShell from '@/components/PageShell.astro';
+
+const page = await getEntry('pages', 'programs');
+const programs = await getCollection('programs');
+const cards = programs.map((program) => ({
+  title: program.data.title,
+  text: program.data.summary,
+  meta: program.data.audience,
+  image: program.data.image,
+  imageAlt: program.data.imageAlt
+}));
+---
+
+<PageShell page={page} cards={cards} cardsEyebrow="Programs" cardsTitle="Current areas of focus" />
