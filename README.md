@@ -17,7 +17,7 @@ Newsletter signup copy and Mailchimp form actions are editable in page frontmatt
 - `src/content/pages/home.md`
 - `src/content/pages/contact.md`
 
-Replace the placeholder `formAction` with the `action` URL from Mailchimp's embedded signup form.
+The `formAction` should match the `action` URL from Mailchimp's embedded signup form. The optional `honeypotName` should match Mailchimp's hidden anti-spam field name.
 
 ## Commands
 

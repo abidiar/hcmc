@@ -4,10 +4,11 @@ interface Props {
   title: string;
   text: string;
   formAction: string;
+  honeypotName?: string;
   note?: string;
 }
 
-const { eyebrow, title, text, formAction, note } = Astro.props;
+const { eyebrow, title, text, formAction, honeypotName, note } = Astro.props;
 ---
 
 <section class="bg-civic-ink py-14 text-white">
@@ -34,6 +35,12 @@ const { eyebrow, title, text, formAction, note } = Astro.props;
           placeholder="Email address"
           required
         />
+        {honeypotName && (
+          <div aria-hidden="true" class="absolute -left-[5000px]">
+            <label for="newsletter-honeypot">Leave this field empty</label>
+            <input id="newsletter-honeypot" type="text" name={honeypotName} tabindex="-1" value="" />
+          </div>
+        )}
         <button
           class="min-h-12 rounded bg-civic-gold px-5 font-bold text-civic-ink hover:bg-[#B4812B]"
           type="submit"

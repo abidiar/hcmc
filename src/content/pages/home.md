@@ -31,8 +31,9 @@ newsletter:
   eyebrow: "Mailing List"
   title: "Stay connected with community updates"
   text: "Receive occasional news, event notices, service opportunities, and public announcements from Howard County Muslim Council."
-  formAction: "https://example.us1.list-manage.com/subscribe/post?u=REPLACE_WITH_MAILCHIMP_USER_ID&id=REPLACE_WITH_AUDIENCE_ID"
-  note: "This form is powered by Mailchimp. Replace the placeholder action URL with the approved Mailchimp embed form action before launch."
+  formAction: "https://gmail.us21.list-manage.com/subscribe/post?u=bf6f899f46db8e1acdd435e4e&id=570c13e6ab&f_id=00948ce6f0"
+  honeypotName: "b_bf6f899f46db8e1acdd435e4e_570c13e6ab"
+  note: "This form is powered by Mailchimp and opens confirmation in a new tab."
 ---
 
 ## A Public Resource for Howard County

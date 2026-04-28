@@ -43,6 +43,7 @@ const pageCollection = defineCollection({
         title: z.string(),
         text: z.string(),
         formAction: z.string(),
+        honeypotName: z.string().optional(),
         note: z.string().optional()
       })
       .optional()
