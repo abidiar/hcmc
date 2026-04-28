@@ -2,6 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/Hero.astro';
 import CardGrid from '@/components/CardGrid.astro';
+import NewsletterSignup from '@/components/NewsletterSignup.astro';
 import { withBase } from '@/lib/paths';
 
 interface Props {
@@ -92,5 +93,15 @@ const data = page.data;
         </div>
       </div>
     </section>
+  )}
+
+  {data.newsletter && (
+    <NewsletterSignup
+      eyebrow={data.newsletter.eyebrow}
+      title={data.newsletter.title}
+      text={data.newsletter.text}
+      formAction={data.newsletter.formAction}
+      note={data.newsletter.note}
+    />
   )}
 </BaseLayout>

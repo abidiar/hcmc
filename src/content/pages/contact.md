@@ -7,6 +7,12 @@ heroAlt: "Abstract placeholder image representing conversation"
 primaryAction:
   label: "Email Placeholder"
   href: "mailto:info@example.org"
+newsletter:
+  eyebrow: "Mailing List"
+  title: "Get updates in your inbox"
+  text: "Sign up for occasional announcements about public events, volunteer opportunities, and community programs."
+  formAction: "https://example.us1.list-manage.com/subscribe/post?u=REPLACE_WITH_MAILCHIMP_USER_ID&id=REPLACE_WITH_AUDIENCE_ID"
+  note: "This form is powered by Mailchimp. Replace the placeholder action URL with the approved Mailchimp embed form action before launch."
 ---
 
 ## General Inquiries

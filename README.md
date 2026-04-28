@@ -12,6 +12,13 @@ Program, event, and news entries live in:
 - `src/content/events`
 - `src/content/news`
 
+Newsletter signup copy and Mailchimp form actions are editable in page frontmatter, currently on:
+
+- `src/content/pages/home.md`
+- `src/content/pages/contact.md`
+
+Replace the placeholder `formAction` with the `action` URL from Mailchimp's embedded signup form.
+
 ## Commands
 
 ```bash

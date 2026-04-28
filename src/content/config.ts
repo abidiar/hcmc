@@ -36,6 +36,15 @@ const pageCollection = defineCollection({
           href: z.string().optional()
         })
       )
+      .optional(),
+    newsletter: z
+      .object({
+        eyebrow: z.string(),
+        title: z.string(),
+        text: z.string(),
+        formAction: z.string(),
+        note: z.string().optional()
+      })
       .optional()
   })
 });
